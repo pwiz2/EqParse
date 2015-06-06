@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>eqparse.__init__ &mdash; src  documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="src  documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../../index.html">src  documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for eqparse.__init__</h1><div class="highlight"><pre>
+<span class="c"># $Id: __init__.py</span>
+<span class="c"># --------------------------------------------------------------------</span>
+<span class="c"># The smc toolkit is</span>
+<span class="c">#</span>
+<span class="c"># Copyright (c) 1999-2007 by Haroon Arshad</span>
+<span class="c">#</span>
+<span class="c"># By obtaining, using, and/or copying this software and/or its</span>
+<span class="c"># associated documentation, you agree that you have read, understood,</span>
+<span class="c"># and will comply with the following terms and conditions:</span>
+<span class="c">#</span>
+<span class="c"># import eqparse</span>
+<span class="c"># Permission to use, copy, modify, and distribute this software and</span>
+<span class="c"># its associated documentation for any purpose and without fee is</span>
+<span class="c"># hereby granted, provided that the above copyright notice appears in</span>
+<span class="c"># all copies, and that both that copyright notice and this permission</span>
+<span class="c"># notice appear in supporting documentation, and that the name of</span>
+<span class="c"># Secret Labs AB or the author not be used in advertising or publicity</span>
+<span class="c"># pertaining to distribution of the software without specific, written</span>
+<span class="c"># prior permission.</span>
+<span class="c">#</span>
+<span class="c"># SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD</span>
+<span class="c"># TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANT-</span>
+<span class="c"># ABILITY AND FITNESS.  IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR</span>
+<span class="c"># BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY</span>
+<span class="c"># DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,</span>
+<span class="c"># WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS</span>
+<span class="c"># ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE</span>
+<span class="c"># OF THIS SOFTWARE.</span>
+<span class="c"># --------------------------------------------------------------------</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">eqparse import module initialise</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c"># print __file__</span>
+<span class="kn">from</span> <span class="nn">site</span> <span class="kn">import</span> <span class="n">getsitepackages</span>
+<span class="n">__EQPDIR</span> <span class="o">=</span> <span class="n">getsitepackages</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">&quot;/eqparse/&quot;</span>
+<span class="n">__EQPMEMORYFILE</span> <span class="o">=</span>  <span class="n">__EQPDIR</span> <span class="o">+</span> <span class="s">&#39;eqpparseMemory.dat&#39;</span>
+<span class="n">__EQPMEMORYFILE2</span> <span class="o">=</span> <span class="n">__EQPDIR</span> <span class="o">+</span> <span class="s">&#39;eqpparseMemoryCombination.dat&#39;</span>
+<span class="c"># get ac address for identity of computer</span>
+<span class="kn">from</span> <span class="nn">uuid</span> <span class="kn">import</span> <span class="n">getnode</span> <span class="k">as</span> <span class="n">get_mac</span>
+<span class="c">#import uuid</span>
+<span class="c">#mc = uuid.uuid4()</span>
+<span class="c">#__EQPMACADDRESS = str(mc)</span>
+<span class="n">__EQPMACADDRESS</span> <span class="o">=</span> <span class="n">get_mac</span><span class="p">()</span>
+<span class="c">#type(__EQPMACADDRESS)</span>
+<span class="c">#type(__EQPMACADDRESS)</span>
+
+
+<span class="c">#print type(__EQPMACADDRESS)</span>
+		
+<span class="kn">import</span> <span class="nn">smc_helper_functions</span>
+
+<span class="kn">import</span> <span class="nn">timer</span>
+
+<span class="kn">import</span> <span class="nn">baseparse</span>
+
+<span class="kn">import</span> <span class="nn">createlibrary</span>
+
+<span class="kn">import</span> <span class="nn">cppparser</span>
+
+<span class="kn">import</span> <span class="nn">xppautparser</span>
+
+<span class="kn">import</span> <span class="nn">matlabparser</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../../index.html">src  documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Author.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

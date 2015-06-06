@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>eqparse.cppparser</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="eqparse-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >EqParse</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="eqparse-module.html">Package&nbsp;eqparse</a> ::
+        Module&nbsp;cppparser
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="eqparse.cppparser-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="eqparse.cppparser-module.html">Module eqparse.cppparser</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment">#! /usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Module eqparse.baseparse=eqparse.baseparse-module.html"><a title="eqparse.baseparse" class="py-name" href="#" onclick="return doclink('link-0', 'baseparse', 'link-0');">baseparse</a></tt> <tt class="py-keyword">import</tt> <tt class="py-op">*</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-string">"""</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-string">C++ PARSER</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-string">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"> </tt>
+<a name="CppParser"></a><div id="CppParser-def"><a name="L9"></a><tt class="py-lineno">  9</tt> <a class="py-toggle" href="#" id="CppParser-toggle" onclick="return toggle('CppParser');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="eqparse.cppparser.CppParser-class.html">CppParser</a> <tt class="py-op">(</tt><tt class="py-base-class">BaseParse</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="CppParser-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="CppParser-expanded"><a name="CppParser.__init__"></a><div id="CppParser.__init__-def"><a name="L10"></a><tt class="py-lineno"> 10</tt> <a class="py-toggle" href="#" id="CppParser.__init__-toggle" onclick="return toggle('CppParser.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="eqparse.cppparser.CppParser-class.html#__init__">__init__</a> <tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">Lib</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="CppParser.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="CppParser.__init__-expanded"><a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line">                <tt class="py-name">super</tt><tt class="py-op">(</tt><tt id="link-1" class="py-name" targets="Class eqparse.cppparser.CppParser=eqparse.cppparser.CppParser-class.html"><a title="eqparse.cppparser.CppParser" class="py-name" href="#" onclick="return doclink('link-1', 'CppParser', 'link-1');">CppParser</a></tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Method eqparse.baseparse.BaseParse.__init__()=eqparse.baseparse.BaseParse-class.html#__init__,Method eqparse.cppparser.CppParser.__init__()=eqparse.cppparser.CppParser-class.html#__init__,Method eqparse.createlibrary.CreateLibrary.__init__()=eqparse.createlibrary.CreateLibrary-class.html#__init__,Method eqparse.matlabparser.MatlabParser.__init__()=eqparse.matlabparser.MatlabParser-class.html#__init__,Method eqparse.timer.Timer.__init__()=eqparse.timer.Timer-class.html#__init__,Method eqparse.xppautparser.XppautParser.__init__()=eqparse.xppautparser.XppautParser-class.html#__init__"><a title="eqparse.baseparse.BaseParse.__init__
+eqparse.cppparser.CppParser.__init__
+eqparse.createlibrary.CreateLibrary.__init__
+eqparse.matlabparser.MatlabParser.__init__
+eqparse.timer.Timer.__init__
+eqparse.xppautparser.XppautParser.__init__" class="py-name" href="#" onclick="return doclink('link-2', '__init__', 'link-2');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">l_enclose</tt> <tt class="py-op">=</tt> <tt class="py-string">"["</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">r_enclose</tt> <tt class="py-op">=</tt> <tt class="py-string">"]"</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">operations</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'\nif('</tt><tt class="py-op">,</tt> <tt class="py-string">")\n"</tt><tt class="py-op">,</tt> <tt class="py-string">"else{\n\t"</tt><tt class="py-op">,</tt> <tt class="py-string">"}\nelse if{\n"</tt><tt class="py-op">,</tt> <tt class="py-string">"}\n"</tt><tt class="py-op">,</tt> <tt class="py-string">"!="</tt><tt class="py-op">,</tt> <tt class="py-string">"pow("</tt><tt class="py-op">,</tt> <tt class="py-string">","</tt><tt class="py-op">,</tt> <tt class="py-string">")"</tt><tt class="py-op">]</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">vec_counter_start</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">comment_prefix</tt> <tt class="py-op">=</tt> <tt class="py-string">"//"</tt>               </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">fileExt</tt> <tt class="py-op">=</tt> <tt class="py-string">"hpp"</tt>             </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">                 </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-3" class="py-name" targets="Method eqparse.baseparse.BaseParse.initialise_library()=eqparse.baseparse.BaseParse-class.html#initialise_library"><a title="eqparse.baseparse.BaseParse.initialise_library" class="py-name" href="#" onclick="return doclink('link-3', 'initialise_library', 'link-3');">initialise_library</a></tt> <tt class="py-op">(</tt><tt class="py-name">Lib</tt><tt class="py-op">)</tt>    </tt>
+</div><a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"> </tt>
+<a name="CppParser.cpp_original"></a><div id="CppParser.cpp_original-def"><a name="L22"></a><tt class="py-lineno"> 22</tt> <a class="py-toggle" href="#" id="CppParser.cpp_original-toggle" onclick="return toggle('CppParser.cpp_original');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="eqparse.cppparser.CppParser-class.html#cpp_original">cpp_original</a> <tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="CppParser.cpp_original-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="CppParser.cpp_original-expanded"><a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">                <tt class="py-comment"># data vars</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">                <tt class="py-name">mfile</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">title</tt> <tt class="py-op">+</tt> <tt class="py-string">"_o"</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">                <tt class="py-name">mcomment</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Method eqparse.baseparse.BaseParse.write_comment()=eqparse.baseparse.BaseParse-class.html#write_comment"><a title="eqparse.baseparse.BaseParse.write_comment" class="py-name" href="#" onclick="return doclink('link-4', 'write_comment', 'link-4');">write_comment</a></tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name" targets="Method eqparse.baseparse.BaseParse.write()=eqparse.baseparse.BaseParse-class.html#write"><a title="eqparse.baseparse.BaseParse.write" class="py-name" href="#" onclick="return doclink('link-5', 'write', 'link-5');">write</a></tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">                                 </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">                <tt class="py-comment"># open file</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Method eqparse.baseparse.BaseParse.open_file()=eqparse.baseparse.BaseParse-class.html#open_file"><a title="eqparse.baseparse.BaseParse.open_file" class="py-name" href="#" onclick="return doclink('link-6', 'open_file', 'link-6');">open_file</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">)</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">                 </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">                <tt class="py-comment"># define header</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">"#ifndef "</tt> <tt class="py-op">+</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">.</tt><tt class="py-name">upper</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">"."</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">fileExt</tt><tt class="py-op">.</tt><tt class="py-name">upper</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">replace</tt><tt class="py-op">(</tt><tt class="py-string">'.'</tt><tt class="py-op">,</tt><tt class="py-string">'_'</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">                                                        <tt class="py-string">"#define "</tt> <tt class="py-op">+</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">.</tt><tt class="py-name">upper</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">"."</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">fileExt</tt><tt class="py-op">.</tt><tt class="py-name">upper</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">replace</tt><tt class="py-op">(</tt><tt class="py-string">'.'</tt><tt class="py-op">,</tt><tt class="py-string">'_'</tt><tt class="py-op">)</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"#include \"pasmc_proxy.h\""</tt><tt class="py-op">,</tt><tt class="py-string">"\n\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">                 </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">                <tt class="py-comment"># start the structure of class {cell}</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">"struct "</tt> <tt class="py-op">+</tt> <tt class="py-name">mfile</tt><tt class="py-op">.</tt><tt class="py-name">replace</tt><tt class="py-op">(</tt><tt class="py-string">' '</tt><tt class="py-op">,</tt><tt class="py-string">'_'</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">" : public cell_u_vars {"</tt><tt class="py-op">,</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">                                                <tt class="py-name">mfile</tt><tt class="py-op">.</tt><tt class="py-name">replace</tt><tt class="py-op">(</tt><tt class="py-string">' '</tt><tt class="py-op">,</tt><tt class="py-string">'_'</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">"(){};"</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">"std::string DIRNAME = "</tt> <tt class="py-op">+</tt> <tt class="py-string">'"'</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">title</tt> <tt class="py-op">+</tt> <tt class="py-string">'";'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-string">"\n\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">                <tt class="py-comment"># define variables</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">                <tt class="py-name">mIndex</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Method eqparse.baseparse.BaseParse.order_index()=eqparse.baseparse.BaseParse-class.html#order_index"><a title="eqparse.baseparse.BaseParse.order_index" class="py-name" href="#" onclick="return doclink('link-7', 'order_index', 'link-7');">order_index</a></tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'range'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method eqparse.baseparse.BaseParse.pattern_write()=eqparse.baseparse.BaseParse-class.html#pattern_write"><a title="eqparse.baseparse.BaseParse.pattern_write" class="py-name" href="#" onclick="return doclink('link-8', 'pattern_write', 'link-8');">pattern_write</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">"name"</tt><tt class="py-op">,</tt><tt class="py-string">"init-value"</tt><tt class="py-op">,</tt> <tt class="py-string">"dimension"</tt><tt class="py-op">,</tt> <tt class="py-string">"comment"</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">                                                                        <tt class="py-op">[</tt><tt class="py-string">"double "</tt><tt class="py-op">,</tt> <tt class="py-string">" = "</tt><tt class="py-op">,</tt> <tt class="py-string">";\t// {"</tt><tt class="py-op">,</tt> <tt class="py-string">"} "</tt><tt class="py-op">,</tt> <tt class="py-string">""</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">mIndex</tt><tt class="py-op">)</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">                                                                        <tt class="py-comment"># order DOES matter for some reason</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">                <tt class="py-comment"># define functions</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">                <tt class="py-name">fNames</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">elem</tt><tt class="py-op">[</tt><tt class="py-string">'name'</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">elem</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'function'</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">                <tt class="py-name">fComment</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">elem</tt><tt class="py-op">[</tt><tt class="py-string">'comment'</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">elem</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'function'</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name"><a title="eqparse.baseparse.BaseParse.pattern_write" class="py-name" href="#" onclick="return doclink('link-9', 'pattern_write', 'link-8');">pattern_write</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-name">fNames</tt><tt class="py-op">,</tt><tt class="py-name">fComment</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">                                                                        <tt class="py-op">[</tt><tt class="py-string">"void "</tt><tt class="py-op">,</tt> <tt class="py-string">"();\t//"</tt><tt class="py-op">,</tt><tt class="py-string">""</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data</tt> <tt class="py-op">,</tt><tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">fNames</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"void operator() ();"</tt><tt class="py-op">)</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">                <tt class="py-comment">#mwrite (mfile, ["void fParameterize();",</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">                <tt class="py-comment">#                               "void operator() ();",</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">                <tt class="py-comment">#                               "typedef void (" + mfile.replace(' ','_') + "::*func_advance) (void);",</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">                <tt class="py-comment">#                               "func_advance step_it {&amp;" + mfile.replace(' ','_') + "::fODEsolveAndUpdate};"])</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">                <tt class="py-comment">#mwrite (mfile, ["void parameterise_it (bool choice) {step_it = choice ? &amp;" + mfile +"::fParameterize :",</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">                <tt class="py-comment">#                               "\t\t&amp;" + mfile +"::fODEsolveAndUpdate;};"])</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">"void write_names_to_file (FILE* output_c);"</tt><tt class="py-op">,</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">                                                <tt class="py-string">"void write_data_to_file_text (FILE* output_c);"</tt><tt class="py-op">]</tt><tt class="py-op">)</tt>               </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"};"</tt><tt class="py-op">,</tt><tt class="py-string">"\n"</tt><tt class="py-op">,</tt> <tt class="py-string">"\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line"> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">                 </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">                <tt class="py-comment"># define an operator, to apply all funcions 9operator for ode itrations run</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">"void "</tt> <tt class="py-op">+</tt> <tt class="py-name">mfile</tt><tt class="py-op">.</tt><tt class="py-name">replace</tt><tt class="py-op">(</tt><tt class="py-string">' '</tt><tt class="py-op">,</tt><tt class="py-string">'_'</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">"::operator() ()"</tt><tt class="py-op">,</tt> <tt class="py-string">"{"</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-string">""</tt><tt class="py-op">,</tt> <tt class="py-string">"\n\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">                <tt class="py-comment">#self.pattern_write (mfile, [fNames[:-1], fComment[:-1]], [ "\t", "();\t//", ""], self.data, range(len(fNames[:-1]))) # was used to miss ode step</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name"><a title="eqparse.baseparse.BaseParse.pattern_write" class="py-name" href="#" onclick="return doclink('link-10', 'pattern_write', 'link-8');">pattern_write</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-name">fNames</tt><tt class="py-op">,</tt> <tt class="py-name">fComment</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt> <tt class="py-string">"\t"</tt><tt class="py-op">,</tt> <tt class="py-string">"();\t//"</tt><tt class="py-op">,</tt> <tt class="py-string">""</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">fNames</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">                <tt class="py-comment">#mwrite (mfile, "\t(*this.*step_it)();")</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"}"</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">                 </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">                <tt class="py-comment"># define function to print out cpp initial conditions</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">                <tt class="py-comment">#mwrite (mfile,["void " + mfile.replace(' ','_') + "print_ic()"]) </tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">                <tt class="py-comment">#mwrite (mfile, "{")</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">                <tt class="py-comment">#mwrite (mfile, )</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">                <tt class="py-comment">#mwrite (mfile, "}")</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line"> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">                 </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">                <tt class="py-comment"># define all function data</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">                <tt class="py-comment">#rhs_eular = self.get_list ('rhs', self.data, "(", ") * dt")</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">                <tt class="py-comment">#for i in self.index['ode']['yes']:</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">                <tt class="py-comment">#       rhs_eular[i] = self.names[i] + " + " + rhs_eular[i]</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">                <tt class="py-comment">##for i in range(len(self.info['function'])):</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">                <tt class="py-comment">#       mcomment (mfile, self.info['function'][i]['comment'],"\n","\n")</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">                <tt class="py-comment">#       mwrite (mfile, "void " + mfile.replace(' ','_') + "::" + self.info['function'][i]['name'] + "()\n{")</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">                <tt class="py-comment">#       self.pattern_write (mfile, ["name", rhs_eular], [ " ", " = ", ";"], self.data, self.info['function'][i]['index'])</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">                <tt class="py-comment">#       mwrite (mfile, "}", "\n")</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">                <tt class="py-name">index_print_nonode</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Method eqparse.baseparse.BaseParse.new_index()=eqparse.baseparse.BaseParse-class.html#new_index"><a title="eqparse.baseparse.BaseParse.new_index" class="py-name" href="#" onclick="return doclink('link-11', 'new_index', 'link-11');">new_index</a></tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">index</tt><tt class="py-op">[</tt><tt class="py-string">'ode'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'no'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">index</tt><tt class="py-op">[</tt><tt class="py-string">'print'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'yes'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">                <tt class="py-name">lhs_names_list</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Method eqparse.baseparse.BaseParse.new_names()=eqparse.baseparse.BaseParse-class.html#new_names"><a title="eqparse.baseparse.BaseParse.new_names" class="py-name" href="#" onclick="return doclink('link-12', 'new_names', 'link-12');">new_names</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="eqparse.baseparse.BaseParse.new_names" class="py-name" href="#" onclick="return doclink('link-13', 'new_names', 'link-12');">new_names</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">names</tt><tt class="py-op">,</tt> <tt class="py-name">index_print_nonode</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">index</tt><tt class="py-op">[</tt><tt class="py-string">'ode'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'yes'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">                <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'function'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">                        <tt class="py-name">mcomment</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'function'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'comment'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-string">"\n"</tt><tt class="py-op">,</tt><tt class="py-string">"\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">                        <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"void "</tt> <tt class="py-op">+</tt> <tt class="py-name">mfile</tt><tt class="py-op">.</tt><tt class="py-name">replace</tt><tt class="py-op">(</tt><tt class="py-string">' '</tt><tt class="py-op">,</tt><tt class="py-string">'_'</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">"::"</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'function'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'name'</tt><tt class="py-op">]</tt> <tt class="py-op">+</tt> <tt class="py-string">"()\n{"</tt><tt class="py-op">)</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                        <tt class="py-name">f_index</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'function'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'index'</tt><tt class="py-op">]</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                        <tt class="py-name">f_var_name</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-string">'function'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'rhs'</tt><tt class="py-op">]</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">                        <tt class="py-name">lhs_name</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Method eqparse.baseparse.BaseParse.get_only_names()=eqparse.baseparse.BaseParse-class.html#get_only_names"><a title="eqparse.baseparse.BaseParse.get_only_names" class="py-name" href="#" onclick="return doclink('link-14', 'get_only_names', 'link-14');">get_only_names</a></tt> <tt class="py-op">(</tt><tt class="py-name">lhs_names_list</tt><tt class="py-op">,</tt> <tt class="py-name">f_index</tt><tt class="py-op">)</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">                        <tt class="py-name">rhs_list</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name" targets="Method eqparse.baseparse.BaseParse.get_list()=eqparse.baseparse.BaseParse-class.html#get_list"><a title="eqparse.baseparse.BaseParse.get_list" class="py-name" href="#" onclick="return doclink('link-15', 'get_list', 'link-15');">get_list</a></tt> <tt class="py-op">(</tt><tt class="py-string">"rhs"</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-string">""</tt><tt class="py-op">,</tt> <tt class="py-string">""</tt><tt class="py-op">,</tt> <tt class="py-name">f_index</tt><tt class="py-op">)</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                        <tt class="py-keyword">for</tt> <tt class="py-name">e</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">f_var_name</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">f_index</tt><tt class="py-op">[</tt><tt class="py-name">e</tt><tt class="py-op">]</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">index</tt><tt class="py-op">[</tt><tt class="py-string">'ode'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'yes'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">                                        <tt class="py-name">rhs_list</tt><tt class="py-op">[</tt><tt class="py-name">e</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">lhs_name</tt><tt class="py-op">[</tt><tt class="py-name">e</tt><tt class="py-op">]</tt> <tt class="py-op">+</tt> <tt class="py-string">" + ("</tt> <tt class="py-op">+</tt> <tt class="py-name">rhs_list</tt><tt class="py-op">[</tt><tt class="py-name">e</tt><tt class="py-op">]</tt> <tt class="py-op">+</tt> <tt class="py-string">") * dt"</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="eqparse.baseparse.BaseParse.pattern_write" class="py-name" href="#" onclick="return doclink('link-16', 'pattern_write', 'link-8');">pattern_write</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-name">lhs_name</tt><tt class="py-op">,</tt><tt class="py-name">rhs_list</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-string">""</tt><tt class="py-op">,</tt> <tt class="py-string">" = "</tt><tt class="py-op">,</tt> <tt class="py-string">";"</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">                        <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"}"</tt><tt class="py-op">,</tt> <tt class="py-string">"\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">                 </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">                <tt class="py-comment"># write string names to file</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"void "</tt> <tt class="py-op">+</tt> <tt class="py-name">mfile</tt> <tt class="py-op">+</tt> <tt class="py-string">"::write_names_to_file  (FILE* output_c)\n{"</tt><tt class="py-op">,</tt> <tt class="py-string">"\n"</tt><tt class="py-op">,</tt> <tt class="py-string">"\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"fprintf(output_c,\"tim \"); "</tt><tt class="py-op">)</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="eqparse.baseparse.BaseParse.pattern_write" class="py-name" href="#" onclick="return doclink('link-17', 'pattern_write', 'link-8');">pattern_write</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"name"</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt> <tt class="py-string">"fprintf(output_c,\"%s \", \""</tt><tt class="py-op">,</tt> <tt class="py-string">"\"); "</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">index</tt><tt class="py-op">[</tt><tt class="py-string">'print'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'yes'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-string">""</tt><tt class="py-op">)</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"fprintf(output_c,\"\\n\");\n}"</tt><tt class="py-op">)</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"void "</tt> <tt class="py-op">+</tt> <tt class="py-name">mfile</tt> <tt class="py-op">+</tt> <tt class="py-string">"::write_data_to_file_text  (FILE* output_c)\n{"</tt><tt class="py-op">,</tt> <tt class="py-string">"\n"</tt><tt class="py-op">,</tt> <tt class="py-string">"\n"</tt><tt class="py-op">)</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"fprintf(output_c, \"%f \",tim); "</tt><tt class="py-op">,</tt><tt class="py-string">""</tt><tt class="py-op">,</tt><tt class="py-string">""</tt><tt class="py-op">)</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name"><a title="eqparse.baseparse.BaseParse.pattern_write" class="py-name" href="#" onclick="return doclink('link-18', 'pattern_write', 'link-8');">pattern_write</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"name"</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt> <tt class="py-string">"fprintf(output_c,\"%.18f \","</tt><tt class="py-op">,</tt> <tt class="py-string">"); "</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">data</tt><tt class="py-op">,</tt>  <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">index</tt><tt class="py-op">[</tt><tt class="py-string">'print'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'yes'</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-string">""</tt><tt class="py-op">)</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"fprintf(output_c,\"\\n\");\n}"</tt><tt class="py-op">)</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                 </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">                <tt class="py-comment"># close file</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">                <tt class="py-name">mwrite</tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">,</tt> <tt class="py-string">"\n#endif"</tt><tt class="py-op">)</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-19" class="py-name" targets="Method eqparse.baseparse.BaseParse.close_file()=eqparse.baseparse.BaseParse-class.html#close_file"><a title="eqparse.baseparse.BaseParse.close_file" class="py-name" href="#" onclick="return doclink('link-19', 'close_file', 'link-19');">close_file</a></tt> <tt class="py-op">(</tt><tt class="py-name">mfile</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="eqparse-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >EqParse</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Jul  8 17:31:09 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

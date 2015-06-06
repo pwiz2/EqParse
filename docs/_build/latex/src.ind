@@ -1,0 +1,130 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter A
+  \item add\_index() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+  \item add\_variable() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+
+  \indexspace
+  \bigletter B
+  \item BaseParse (class in eqparse.baseparse), \hyperpage{3}
+  \item baseparse (in module eqparse.\_\_init\_\_), \hyperpage{3}
+
+  \indexspace
+  \bigletter C
+  \item change\_a\_type() (in module eqparse.createlibrary), \hyperpage{6}
+  \item change\_variable() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+  \item close\_file() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item complete() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+  \item copy\_lib() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+  \item copy\_lib\_vec() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+  \item cpp\_original() (eqparse.cppparser.CppParser method), \hyperpage{5}
+  \item CppParser (class in eqparse.cppparser), \hyperpage{5}
+  \item create\_data() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+  \item CreateLibrary (class in eqparse.createlibrary), \hyperpage{5}
+
+  \indexspace
+  \bigletter D
+  \item dup2() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+
+  \indexspace
+  \bigletter E
+  \item end() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item eqparse (module), \hyperpage{7}
+  \item eqparse.\_\_init\_\_ (module), \hyperpage{3}
+  \item eqparse.baseparse (module), \hyperpage{3}
+  \item eqparse.cppparser (module), \hyperpage{5}
+  \item eqparse.createlibrary (module), \hyperpage{5}
+  \item eqparse.matlabparser (module), \hyperpage{6}
+  \item eqparse.smc\_helper\_functions (module), \hyperpage{7}
+  \item eqparse.timer (module), \hyperpage{7}
+  \item eqparse.xppautparser (module), \hyperpage{7}
+  \item error() (in module eqparse.smc\_helper\_functions), \hyperpage{7}
+
+  \indexspace
+  \bigletter F
+  \item finish() (eqparse.timer.Timer method), \hyperpage{7}
+  \item FSA\_cvodes() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item FSA\_ode() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item function\_order() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+
+  \indexspace
+  \bigletter G
+  \item get\_directory() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item get\_index() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item get\_index\_dependency() (eqparse.createlibrary.CreateLibrary method), \hyperpage{5}
+  \item get\_list() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item get\_names() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item get\_only\_names() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+
+  \indexspace
+  \bigletter I
+  \item initialise\_library() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item inset\_runfile\_slider() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+
+  \indexspace
+  \bigletter M
+  \item MatlabParser (class in eqparse.matlabparser), \hyperpage{6}
+  \item multi\_odefile() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item multi\_paramfile() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item multi\_runfile() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item multi\_runfile\_slider() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+
+  \indexspace
+  \bigletter N
+  \item new\_dependancy\_index() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item new\_index() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item new\_names() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item new\_names\_restricted() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item new\_order() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+
+  \indexspace
+  \bigletter O
+  \item open\_file() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item order\_index() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+
+  \indexspace
+  \bigletter P
+  \item p\_est\_main() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item parse\_one() (eqparse.xppautparser.XppautParser method), \hyperpage{7}
+  \item pattern\_change() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item pattern\_write() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item printarray() (eqparse.xppautparser.XppautParser method), \hyperpage{7}
+
+  \indexspace
+  \bigletter R
+  \item rasterise\_dict\_modifiers() (eqparse.baseparse.BaseParse method), \hyperpage{4}
+  \item replace\_operations() (eqparse.baseparse.BaseParse method), \hyperpage{5}
+
+  \indexspace
+  \bigletter S
+  \item search\_and\_replace() (eqparse.baseparse.BaseParse method), \hyperpage{5}
+  \item set\_directory() (eqparse.createlibrary.CreateLibrary method), \hyperpage{6}
+  \item set\_temp\_ic\_name() (eqparse.xppautparser.XppautParser method), \hyperpage{7}
+  \item solve\_single() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item start() (eqparse.timer.Timer method), \hyperpage{7}
+  \item supp\_initialise\_data() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+  \item supp\_input\_ic() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+
+  \indexspace
+  \bigletter T
+  \item table (eqparse.createlibrary.CreateLibrary attribute), \hyperpage{6}
+  \item Timer (class in eqparse.timer), \hyperpage{7}
+  \item truncate\_ics() (eqparse.xppautparser.XppautParser method), \hyperpage{7}
+
+  \indexspace
+  \bigletter V
+  \item vectorise\_name() (eqparse.baseparse.BaseParse method), \hyperpage{5}
+  \item vectorised\_to\_readable() (eqparse.matlabparser.MatlabParser method), \hyperpage{6}
+
+  \indexspace
+  \bigletter W
+  \item write() (eqparse.baseparse.BaseParse method), \hyperpage{5}
+  \item write\_comment() (eqparse.baseparse.BaseParse method), \hyperpage{5}
+
+  \indexspace
+  \bigletter X
+  \item xpp\_search\_and\_define() (eqparse.xppautparser.XppautParser method), \hyperpage{7}
+  \item XppautParser (class in eqparse.xppautparser), \hyperpage{7}
+
+\end{theindex}
